@@ -19,13 +19,14 @@ public class AdminController {
 
     private final SellerService sellerService;
     private final HomeCategoryService homeCategoryService;
-
+// for git practise i add this line
+    
 
     @PatchMapping("/seller/{id}/status/{status}")
     public ResponseEntity<Seller> updateSellerStatus(
             @PathVariable Long id,
             @PathVariable AccountStatus status) throws SellerException {
-
+      System.out.println("hi aaftab git practise");
         Seller updatedSeller = sellerService.updateSellerAccountStatus(id,status);
         return ResponseEntity.ok(updatedSeller);
 
