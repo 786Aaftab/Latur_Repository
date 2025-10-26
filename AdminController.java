@@ -27,6 +27,8 @@ public class AdminController {
             @PathVariable Long id,
             @PathVariable AccountStatus status) throws SellerException {
       System.out.println("hi aaftab git practise");
+      System.out.println("hi aaftab git practise my third commit");
+      
         Seller updatedSeller = sellerService.updateSellerAccountStatus(id,status);
         return ResponseEntity.ok(updatedSeller);
 
